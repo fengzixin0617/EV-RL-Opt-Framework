@@ -1,13 +1,27 @@
 # EV-RL-Opt-Framework
-An Integrated Simulation-Optimisation Framework for Future Public Electric Vehicle Charger Deployment
 
-Despite the rapid expansion of public electric vehicle (EV) charging infrastructure, charging networks remain far less mature than conventional refuelling systems. Existing studies on public charger optimisation typically overlook EV drivers’ post-deployment behaviour change. This paper proposes an integrated, bi-directional simulation–optimisation framework to optimise future public charger locations and evaluate drivers’ behavioural responses to newly deployed chargers. We first develop an agent-based reinforcement learning (RL) model to simulate driving and charging behaviours of EV drivers. Building on this simulation, we design a spatial optimisation model to allocate new public chargers. The RL model is then re-implemented to evaluate how EV drivers adjust their behaviours in response to infrastructure provision changes. Applied to a case study area of Great Britain, the results show that the network-wide State of Charge (SOC) increases in early stages of network expansion, but declines as the network continues to expand. The decline reflects a perceived ‘safer charging environment’, where drivers become more confident to tolerate lower SOC levels before recharging.  Consequently, part of the charging opportunity gains from infrastructure expansion is absorbed by behavioural adaptation rather than translating into higher SOC levels. Notably, SOC levels between 20% -30% is a critical range in which EV drivers most actively adjust their charging decisions in response to a denser charging network. Overall, the findings highlight the need for policymakers to account for the dynamic feedback between network expansion and adaptive driver behaviour to ensure effective infrastructure planning. 
+**An Integrated Simulation–Optimisation Framework for Future Public Electric Vehicle Charger Deployment**
 
-<img width="272" height="330" alt="image" src="https://github.com/user-attachments/assets/e7ce5c64-0076-4c54-a768-3b36aa894dc8" />
+<p align="center">
+  <img width="272" height="330" alt="Framework overview" src="https://github.com/user-attachments/assets/e7ce5c64-0076-4c54-a768-3b36aa894dc8" />
+</p>
 
-The framework consists of an improved version of Flow Refuelling Location Model (FRLM) and an Reinforcement Learning (RL) model. 
+## Overview
 
-The FRLM is now publicly available at PySAL package (https://pysal.org/libpysal/stable/). 
-More details of the RL model can be found at https://journals.sagepub.com/doi/full/10.1177/23998083261455937 
+Despite the rapid expansion of public electric vehicle (EV) charging infrastructure, charging networks remain far less mature than conventional refuelling systems. Existing studies on public charger optimisation typically overlook EV drivers' **post-deployment behaviour change**.
+
+This repository implements an integrated, **bi-directional simulation–optimisation framework** that optimises future public charger locations and evaluates how drivers respond to newly deployed chargers:
+
+1. **Simulate** – An agent-based reinforcement learning (RL) model simulates the driving and charging behaviour of EV drivers.
+2. **Optimise** – A spatial optimisation model allocates new public chargers based on the simulated demand.
+3. **Re-evaluate** – The RL model is re-run to assess how drivers adapt their behaviour to the expanded charging network.
+
+## Components
+
+| Component | Description | Availability |
+|---|---|---|
+| **Improved FRLM** | An enhanced Flow Refuelling Location Model for charger siting | The FRLM is now publicly available in [PySAL / libpysal](https://pysal.org/libpysal/stable/) |
+| **RL Model** | Agent-based reinforcement learning model of EV driving and charging behaviour | For full details of the RL model, see: [published paper](https://journals.sagepub.com/doi/full/10.1177/23998083261455937) |
+
 
 
