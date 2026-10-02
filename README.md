@@ -1,4 +1,6 @@
-# EV-RL-Opt-Framework
+# EV-RL-Opt-Framewor
+
+More details of the model will be added soon. 
 
 **An Integrated Simulation–Optimisation Framework for Future Public Electric Vehicle Charger Deployment**
 
