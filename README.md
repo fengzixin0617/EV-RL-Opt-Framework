@@ -1,4 +1,4 @@
-# EV-RL-Opt-Framewor
+# EV-RL-Opt-Framework
 
 More details of the model will be added soon. 
 
